@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-import type { AuthParams } from "../types/AuthLink";
+import type { AuthParams } from "../types/AuthParams";
 
 
 export default function useAuthParams(): [AuthParams, (authParams: AuthParams) => void] {
+    //pass client id as arg
     const [authParams, setAuthParams] = useState<AuthParams>({
         clientId: "",
         redirectUri: "",
