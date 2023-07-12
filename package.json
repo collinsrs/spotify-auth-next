@@ -9,22 +9,24 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "build": "tsc",
-    "prepare" : "pnpm build",
-    "prepublishOnly" : "pnpm test && pnpm lint",
-    "preversion" : "pnpm lint",
-    "version" : "pnpm format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "pnpm build",
+    "publish": "pnpm publish",
+    "prepublishOnly": "pnpm test && pnpm lint",
+    "preversion": "pnpm lint",
+    "version": "pnpm format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/collinsrs/spotify-auth-next.git"
-  },  
+  },
   "keywords": [],
   "author": "@collinsrs",
   "license": "MIT",
   "homepage": "https://github.com/collinsrs/spotify-auth-next#readme",
   "devDependencies": {
     "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.44.0",
