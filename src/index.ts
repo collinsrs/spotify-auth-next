@@ -1,2 +1,2 @@
-export * from './components/AuthLink'
-export * from './components/AuthParams'
+export * from './components/AuthLink';
+export * from './components/AuthParams';

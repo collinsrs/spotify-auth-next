@@ -1,1 +1,1 @@
-export * from './types/AuthLink'
+export * from './types/AuthLink';
