@@ -4,4 +4,3 @@ export interface AuthLink {
   className?: string;
   children: React.ReactNode | string;
 }
-
