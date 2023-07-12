@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { AuthLink } from "../types/AuthLink";
+import type { AuthLink } from "../types/AuthLink";
 
 
 export default function AuthLink({params, authType, className, children}: AuthLink) {
