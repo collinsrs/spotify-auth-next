@@ -1,4 +1,4 @@
-import type { AuthParams } from "./AuthParams";
+import type { AuthParams } from './AuthParams';
 
 export interface AuthLink {
   params: AuthParams;
